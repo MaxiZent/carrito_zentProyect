@@ -1,0 +1,109 @@
+body {
+    background-image: url(https://i.pinimg.com/736x/9f/99/66/9f996626135ea0506d5e3de41a70e0db--free-photoshop.jpg)
+}
+
+header,
+.alert {
+    z-index: 100;
+}
+
+.description {
+    height: 25px;
+    overflow: hidden;
+    transition: height .3s ease-in .3s;
+}
+
+.description:hover {
+    height: 80px;
+}
+
+.nav-pills .nav-link.active {
+    color: aliceblue;
+    background-color: #256D85;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+a {
+    color: black;
+    font-weight: 600;
+}
+
+h2 {
+    color: white;
+}
+
+h5 {
+    color: white;
+}
+
+.carrito {
+    min-height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.table__productos {
+    display: flex;
+}
+
+.table__productos>img {
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+.table__cantidad>input {
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.hide,
+.remove {
+    display: none;
+}
+
+footer {
+    background-color: white;
+}
+
+.contenedor {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.contenedor p {
+    margin: 0;
+    padding: 5px;
+    color: #256D85;
+    align-items: center;
+    font-size: 15px;
+    cursor: default;
+}
+
+footer .contenedor img:hover {
+    transform: scale(1.1);
+}
