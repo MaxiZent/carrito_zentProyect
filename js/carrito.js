@@ -136,6 +136,7 @@ window.onload = function () {
   }
 };
 
+
 const lista = document.querySelector('#listado')
 
 fetch('./data.json')
