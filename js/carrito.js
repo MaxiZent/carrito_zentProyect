@@ -135,3 +135,20 @@ window.onload = function () {
     renderCarrito();
   }
 };
+
+const lista = document.querySelector('#listado')
+
+fetch('./data.json')
+    .then((res) => res.json())
+    .then((data) => {
+        console.log(data)
+        data.forEach((producto) => {
+            const li = document.createElement('li')
+            li.innerHTML = `
+        <h1>${producto.nombre}</h1>
+        <p>${producto.precio}</p>
+        <hr/>
+        `
+            lista.append(li)
+        })
+    })
